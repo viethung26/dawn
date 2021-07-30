@@ -246,6 +246,9 @@
         "one": "{{ count }} dipilih",
         "other": "{{ count }} dipilih"
       }
+    },
+    "video": {
+      "load_video": "Muat video: {{ description }}"
     }
   },
   "localization": {

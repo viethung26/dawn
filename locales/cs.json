@@ -256,6 +256,9 @@
         "few": "Vybráno: {{ count }}",
         "many": "Vybráno: {{ count }}"
       }
+    },
+    "video": {
+      "load_video": "Načíst video: {{ description }}"
     }
   },
   "localization": {

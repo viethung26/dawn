@@ -256,6 +256,9 @@
         "few": "Št. izbranih: {{ count }}",
         "two": "Št. izbranih: {{ count }}"
       }
+    },
+    "video": {
+      "load_video": "Naloži videoposnetek: {{ description }}"
     }
   },
   "localization": {

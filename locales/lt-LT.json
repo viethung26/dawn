@@ -256,6 +256,9 @@
         "few": "Pasirinkta {{ count }}",
         "many": "Pasirinkta {{ count }}"
       }
+    },
+    "video": {
+      "load_video": "Įkelti vaizdo įrašą „{{ description }}“"
     }
   },
   "localization": {

@@ -246,6 +246,9 @@
         "one": "{{ count }} ausgewählt",
         "other": "{{ count }} ausgewählt"
       }
+    },
+    "video": {
+      "load_video": "Video laden: {{ description }}"
     }
   },
   "localization": {

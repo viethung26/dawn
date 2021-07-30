@@ -256,6 +256,9 @@
         "few": "Выбрано: {{ count }}",
         "many": "Выбрано: {{ count }}"
       }
+    },
+    "video": {
+      "load_video": "Загрузить видео: {{ description }}"
     }
   },
   "localization": {
