@@ -2,6 +2,7 @@ class VariantSelects extends HTMLElement {
   constructor() {
     super();
     this.addEventListener('change', this.onVariantChange);
+    this.mediaChangeEvent = new Event('mediaChange');
   }
 
   onVariantChange() {
@@ -45,6 +46,7 @@ class VariantSelects extends HTMLElement {
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
+    parent.dispatchEvent(this.mediaChangeEvent);
     window.setTimeout(() => { parent.scroll(0, 0); parent.scrollIntoView({behavior: "smooth"}); });
   }
 
