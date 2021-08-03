@@ -38,9 +38,12 @@ class VariantSelects extends HTMLElement {
     const newMedia = document.querySelector(
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
+    const modalContent = document.querySelector('.product-media-modal__content');
+    const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     if (!newMedia) return;
     const parent = newMedia.parentElement;
     if (parent.firstChild == newMedia) return;
+    modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
     window.setTimeout(() => { parent.scroll(0, 0); parent.scrollIntoView({behavior: "smooth"}); });
   }
