@@ -1,8 +1,9 @@
 class VariantSelects extends HTMLElement {
   constructor() {
     super();
+    this.header = document.querySelector('sticky-header');
     this.addEventListener('change', this.onVariantChange);
-    this.mediaChangeEvent = new Event('mediaChange');
+    this.mediaChangeEvent = new Event('mediaChange', {"bubbles": true});
   }
 
   onVariantChange() {
@@ -48,6 +49,7 @@ class VariantSelects extends HTMLElement {
     parent.prepend(newMedia);
     parent.dispatchEvent(this.mediaChangeEvent);
     window.setTimeout(() => { parent.scroll(0, 0); parent.scrollIntoView({behavior: "smooth"}); });
+    window.setTimeout(() => { this.header.productMediaIsChanging = false;}, 800);
   }
 
   updateURL() {
