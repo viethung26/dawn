@@ -120,14 +120,14 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_price | money }}
+                              {% include 'product-customizer-helper' with 'item-price', items: cart.items %}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_price | money }}
+                           {% include 'product-customizer-helper' with 'item-price', items: cart.items %}
                           </dd>
                         </dl>
 
@@ -145,7 +145,7 @@
                         {%- endif -%}
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_price | money }}
+                          {% include 'product-customizer-helper' with 'item-price', items: cart.items %}
                         </span>
                       {%- endif -%}
                     </div>
@@ -192,12 +192,12 @@
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            {% include 'product-customizer-helper' with 'item-line-price', items: cart.items %}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          {% include 'product-customizer-helper' with 'item-line-price', items: cart.items %}
                         </span>
                       {%- endif -%}
                     </div>
