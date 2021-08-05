@@ -58,29 +58,6 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "1627332683be54538b": {
-        "type": "shopify:\/\/apps\/os2-sample-app\/blocks\/app_embed\/f08f8e21-da04-4bc5-bdfd-918341b448f1",
-        "disabled": true,
-        "settings": {
-          "background_color": "#000000",
-          "padding_x": 300,
-          "padding_y": 200,
-          "show_heading": true,
-          "heading": "Average Score",
-          "featured_product": "",
-          "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita veritatis quibusdam quas facilis soluta deserunt aliquid molestias unde culpa. Voluptatibus doloribus doloremque harum ratione?<\/p>"
-        }
-      },
-      "1627332683ef5cd546": {
-        "type": "shopify:\/\/apps\/os2-sample-app\/blocks\/confetti_dog\/f08f8e21-da04-4bc5-bdfd-918341b448f1",
-        "disabled": true,
-        "settings": {
-          "button_text": "Start the party!",
-          "colour": "#000000"
-        }
-      }
-    }
+    ]
   }
 }
