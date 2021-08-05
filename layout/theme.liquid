@@ -104,9 +104,10 @@
     {%- endunless -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-  </head>
-
-  <body>
+  {{ 'shopstorm-apps.scss.css' | asset_url | stylesheet_tag }}
+  {% render 'shopstorm-scripttags' %}
+</head>
+<body>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -142,5 +143,6 @@
         unavailable: `{{ 'products.product.unavailable' | t }}`,
       }
     </script>
+   {% render 'product-customizer-asw' %}
   </body>
 </html>
