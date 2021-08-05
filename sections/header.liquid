@@ -1,3 +1,5 @@
+{% capture cart_item_count %}{% include 'product-customizer-helper' with 'cart-item-count' %}{% endcapture %}{% assign cart_item_count = cart_item_count | plus: 0 %}
+
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -412,10 +414,10 @@
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
+            {%- if cart_item_count < 100 -%}
               <span aria-hidden="true">{% include 'product-customizer-helper' with 'cart-item-count' %}</span>
             {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart_item_count }}</span>
           </div>
         {%- endif -%}
       </a>
