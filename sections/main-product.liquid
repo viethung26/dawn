@@ -122,8 +122,9 @@
                 </div>
               </details>
             </div>
-            {% include 'product-customizer' %}
+            
           {%- when 'quantity_selector' -%}
+          {% include 'product-customizer' %}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
