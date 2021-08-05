@@ -275,7 +275,7 @@
                         {%- endif -%}
                     </button>
                     {%- if block.settings.show_dynamic_checkout -%}
-                      {{ form | payment_button }}
+                      {% if product.metafields.product_customizer == empty %}{{ form | payment_button }}{% endif %}
                     {%- endif -%}
                   </div>
                 {%- endform -%}
