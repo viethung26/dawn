@@ -36,7 +36,7 @@
 
             <tbody>
               {%- for item in cart.items -%}
-                <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+                <tr style="{% include 'product-customizer-helper' with 'hide-pricing-item-row' %}" {% include 'product-customizer-helper' with 'cart-row-data' %} class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
                       <img class="cart-item__image"
