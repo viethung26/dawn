@@ -61,6 +61,12 @@
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "body"
           }
+        },
+        "5fa36fcf-7763-408a-b49f-e8aa8a5e7652": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.title}}"
+          }
         }
       },
       "block_order": [
@@ -73,7 +79,8 @@
         "buy_buttons",
         "description",
         "share",
-        "a6b5f959-aab2-4666-8322-640d3090ca9a"
+        "a6b5f959-aab2-4666-8322-640d3090ca9a",
+        "5fa36fcf-7763-408a-b49f-e8aa8a5e7652"
       ],
       "settings": {
         "enable_sticky_info": true,
