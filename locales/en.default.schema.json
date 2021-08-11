@@ -216,14 +216,14 @@
       }
     },
     "apps": {
-      "name": "Apps xx",
+      "name": "Apps",
       "settings": {
         "include_margins": {
           "label": "Make section margins the same as theme"
         }
       },
       "presets": {
-        "name": "Apps"
+        "name": "Apps xx"
       }
     },
     "collage": {
