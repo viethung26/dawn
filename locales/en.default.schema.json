@@ -1618,6 +1618,9 @@
       "presets": {
         "name": "Video"
       }
+    },
+    "ken-test": {
+      "name": "Ken Test XX"
     }
   }
 }
