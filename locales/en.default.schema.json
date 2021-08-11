@@ -216,7 +216,7 @@
       }
     },
     "apps": {
-      "name": "Apps",
+      "name": "Apps xx",
       "settings": {
         "include_margins": {
           "label": "Make section margins the same as theme"
