@@ -87,11 +87,17 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "162867531583e1319a": {
+      "type": "ken-test",
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "162867531583e1319a"
   ]
 }
