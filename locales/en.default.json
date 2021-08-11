@@ -254,7 +254,7 @@
       "load_video": "Load video: {{ description }}"
     },
     "test": {
-      "image_banner": "abc"
+      "xx": "abc"
     }
   },
   "localization": {
