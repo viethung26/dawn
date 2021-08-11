@@ -253,7 +253,7 @@
     "video": {
       "load_video": "Load video: {{ description }}"
     },
-    "test": {
+    "ken-test": {
       "xx": "abc"
     }
   },
