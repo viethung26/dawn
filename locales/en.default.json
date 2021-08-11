@@ -252,6 +252,9 @@
     },
     "video": {
       "load_video": "Load video: {{ description }}"
+    },
+    "test": {
+      "xx": "abc"
     }
   },
   "localization": {
