@@ -83,6 +83,36 @@
         "show_vendor": false
       }
     },
+    "1628753793223268f6": {
+      "type": "ken-test",
+      "blocks": {
+        "1628753793223268f6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "2be1f296-5c09-47de-a10f-fe00285adae7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "0b43163a-2e0f-4da5-bdad-48691b87eb93": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        }
+      },
+      "block_order": [
+        "1628753793223268f6-0",
+        "2be1f296-5c09-47de-a10f-fe00285adae7",
+        "0b43163a-2e0f-4da5-bdad-48691b87eb93"
+      ],
+      "settings": {
+      }
+    },
     "pagefly-product-section": {
       "type": "pf-organic-cotton-t-shirt-82bd0b6b",
       "settings": {
@@ -92,6 +122,7 @@
   "order": [
     "main",
     "product-recommendations",
+    "1628753793223268f6",
     "pagefly-product-section"
   ]
 }
