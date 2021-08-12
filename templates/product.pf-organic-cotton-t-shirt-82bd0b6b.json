@@ -117,12 +117,18 @@
       "type": "pf-organic-cotton-t-shirt-82bd0b6b",
       "settings": {
       }
+    },
+    "1628755504184a4df4": {
+      "type": "pf-1f488512",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
     "1628753793223268f6",
-    "pagefly-product-section"
+    "pagefly-product-section",
+    "1628755504184a4df4"
   ]
 }
