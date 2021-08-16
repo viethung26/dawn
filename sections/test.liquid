@@ -1,10 +1,10 @@
 <div class="taglinkmb">
 {% for tag in product.tags %}
   {% capture url %}/collections/lessons/{{tag | handle}}{% endcapture %}
-  {% if product.title contains "Pack" %}
+  {% unless tag contains "abc" %}
     {% capture label %}#{{tag | split:'＞' | last}}{% endcapture %}
     {{ label | link_to:url }}
-  {% endif %}
+  {% endunless %}
 {% endfor %}  
 </div>
 <style>
