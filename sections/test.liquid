@@ -2,10 +2,10 @@
 {% for tag in product.tags %}
   {% capture url %}/collections/lessons/{{tag | handle}}{% endcapture %}
   {% unless tag contains '＜インストラクター＞'%}
-  {% unless tag contains '＜時間帯＞'%}
+  {% if tag contains '＜時間帯＞' %}
     {% capture label %}#{{tag | split:'＞' | last}}{% endcapture %}
     {{ label | link_to:url }}
-  {% endunless %}
+  {% endif %}
   {% endunless %}
 {% endfor %}  
 </div>
