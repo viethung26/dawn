@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "a6b5f959-aab2-4666-8322-640d3090ca9a": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "body"
+          }
+        },
+        "5fa36fcf-7763-408a-b49f-e8aa8a5e7652": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.title}}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "subtitle",
+        "variant_picker",
+        "price",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "a6b5f959-aab2-4666-8322-640d3090ca9a",
+        "5fa36fcf-7763-408a-b49f-e8aa8a5e7652"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
+    },
+    "pf-938c4fb8": {
+      "type": "pf-938c4fb8",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "pf-938c4fb8"
+  ]
+}
