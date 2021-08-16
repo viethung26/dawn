@@ -1,3 +1,32 @@
+<div class="taglinkmb">
+{% for tag in product.tags %}
+  {% capture url %}/collections/lessons/{{tag | handle}}{% endcapture %}
+    {% capture label %}#{{tag | split:'＞' | last}}{% endcapture %}
+    {{ label | link_to:url }}
+{% endfor %}  
+</div>
+<style>
+  .taglinkmb{
+	padding: 0px 12px;
+	text-align: left;
+   min-height:60px;
+  }
+ .taglinkmb a {
+    background: #eee;
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 12px;
+    margin-top: 8px;
+   font-family: HiraginoSans-W3;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  color: #333333;
+}
+</style>
 {% schema %}
   {
     "name": "Section name",
