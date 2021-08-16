@@ -1,7 +1,7 @@
 <div class="taglinkmb">
 {% for tag in product.tags %}
   {% capture url %}/collections/lessons/{{tag | handle}}{% endcapture %}
-  {% unless tag contains "abc" %}
+  {% unless tag contains '＜インストラクター＞' %}
     {% capture label %}#{{tag | split:'＞' | last}}{% endcapture %}
     {{ label | link_to:url }}
   {% endunless %}
