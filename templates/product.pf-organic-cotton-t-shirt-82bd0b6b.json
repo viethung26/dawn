@@ -67,6 +67,12 @@
           "settings": {
             "custom_liquid": ""
           }
+        },
+        "850f7961-37b0-43ef-a8dd-14ac4c827c9b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.metafields.my_fields.abccxyz}}"
+          }
         }
       },
       "block_order": [
@@ -80,7 +86,8 @@
         "description",
         "share",
         "8ed13c50-6c99-4c9a-96d7-fd8d28708c84",
-        "f4dab41c-9ad9-4661-af90-008eb3ae5a0a"
+        "f4dab41c-9ad9-4661-af90-008eb3ae5a0a",
+        "850f7961-37b0-43ef-a8dd-14ac4c827c9b"
       ],
       "settings": {
         "enable_sticky_info": true,
