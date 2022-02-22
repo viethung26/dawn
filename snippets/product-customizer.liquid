@@ -14,6 +14,15 @@ Check if the first metafield starts with position, which would indicate a v4 met
   {%- assign sorted_metafields = product.metafields.product_customizer -%}
 {%- endif -%}
 <div class="product-customizer-options" data-product-id="{{ product.id }}" data-product-price="{{ product.price }}" data-version="2.0.0">
+  <div class="product-customizer-loading" style="display: none;">
+    Loading Your Options<br />
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#f5323f" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+      </circle>
+    </svg>
+  </div>
+  <div class="product-customizer-content">
   {%- assign option_price_found = false -%}
   {%- for option_metafield in sorted_metafields -%}
   {%- capture whitespace -%}
@@ -241,6 +250,7 @@ Check if the first metafield starts with position, which would indicate a v4 met
     </div>
     </div>
   {%- endfor -%}
+  </div>
 </div>
   {%- if option_price_found -%}
     <p class="product-customizer-customizations-total" data-product-id="{{ product.id }}">Customizations Total: <span>{{ 0 | money }}</span></p>
