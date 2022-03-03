@@ -43,7 +43,8 @@
 </div>
 {% if request.page_type == "product" %}
   {% capture prodcustomizer_data %}
-    <div class="product-customizer-loading">
+    <div class="product-customizer-options aswm-mode" data-product-id="4538964967560" data-product-price="7800" data-version="2.0.0">
+      <div class="product-customizer-loading">
         Loading Your Options
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
           <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#f5323f" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
@@ -51,7 +52,7 @@
           </circle>
         </svg>
       </div><br><br>
-    <div class="product-customizer-options aswm-mode" data-product-id="4538964967560" data-product-price="7800" data-version="2.0.0">
+      <div class="product-customizer-content">
       <div class="product-customizer-option option-type-select " data-option-id="447585" data-product-option-id="9231794" data-option-name="dropdown">
         <label for="4538964967560_option_1">Dropdown</label><div><span class="product-customizer-select-wrap">
           <select id="4538964967560_option_1" name="properties[Dropdown]">
@@ -95,7 +96,7 @@
                           <span class="option-value">Second Choice</span></span></span><span class="product-customizer-swatch" data-id="4538964967560_option_8" data-value="Third Choice" data-index="2"><span style="background: #0000FF; padding: 0 12px; margin-right: 7px; border-radius:5px;"></span>
                             <span style="width: 150px"><span class="option-value">Third Choice</span></span></span></div></div></div></span></div></div>
                             <div class="product-customizer-option option-type-file " data-option-id="447605" data-product-option-id="9232125" data-option-name="file-upload">
-                              <label for="4538964967560_option_9">File Upload</label><div><input type="file" id="4538964967560_option_9" name="properties[File Upload]"></div></div></div>
+                              <label for="4538964967560_option_9">File Upload</label><div><input type="file" id="4538964967560_option_9" name="properties[File Upload]"></div></div></div></div>
   {% endcapture %}
 
   {%- capture prodcustomizer_options -%}
